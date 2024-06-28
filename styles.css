@@ -1,0 +1,262 @@
+#particles-js {
+    width: 99%;
+    height: 100vh;
+    margin-top: -10px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.body {
+    background-color: black;
+}
+.name {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 4px 10px rgb(57,255, 20);
+    font-family: "Archivo Black", sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end)
+}
+
+
+    /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  } */
+
+
+.navi {
+    margin: 25px;
+    width: 260px;
+    height: 50px;
+    font-weight: bold;
+    background-color:  black;
+    border: white solid 5px;
+    color: rgb(57,255, 20);   /* #7ac2b2  */
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 2px 2px 10px rgb(57,255, 20);
+    font-family: "Nunito", sans-serif;
+}
+
+.navi:hover {
+    filter: brightness(120%);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    z-index: -1;
+}
+p {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+a {
+    margin-left: 10px;
+    z-index: 1;
+}
+.car-images {
+    width: 374px;
+    height: 287px;
+    margin: 20px;
+    display: inline-flex;
+    z-index: 1;
+}
+.profile-picture {
+    width: 500px;
+    height: 500px;
+    margin-left: 80px;
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: -390px;
+    z-index: 2;
+}
+.about {
+    margin-bottom: 30px;
+    margin: auto;
+}
+.title {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    text-shadow: 3px 4px 10px rgb(57,255, 20);
+
+}
+.about-text-1 {
+    display: inline-block;
+    margin-right: 80px;
+    width: 500px;
+    height: 200px;
+    flex: 1;
+    flex-direction: column;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito";
+}
+.skills-box {
+    border: solid 8px white;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 2px 4px 10px white;
+}
+.skills-box:hover {
+    border: solid 8px white;
+    box-shadow: 3px 5px 10px white;
+    box-shadow: rg;
+}
+.skills-image {
+    margin-top: 25px;
+    width: 100px;
+    height: 100px;
+}
+.skills-text {
+    font-size: 20px;
+    color: rgb(57,255, 20)
+}
+
+
+.portfolio {
+    display: inline-flex;
+    height: 750px;
+    width: 100%;
+    z-index: 1;
+}
+
+.portfolio:after{
+ content: "";
+ display: table;
+ clear: both;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+
+body {
+    background-color: black;
+
+    
+  }
+.about-links {
+    display: flex;
+    justify-content: center;
+}
+
+.chatbot-img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.chatbot-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 25px;
+    background-color: black;
+    border: 3px white solid;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px rgb(57,255, 20);
+    color: rgb(57,255, 20);
+    font-family: "Pixelify Sans";
+}
+.chatbot-submit {
+    margin: 25px;
+    width: 260px;
+    height: 50px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: white 5px solid;
+    border-radius: 10px;
+    z-index: 1;
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-family: "Nunito";
+}
+.chatbot-submit:hover {
+    box-shadow: 2px 4px 10px rgb(57,255, 20);
+}
+.input-name, .input-email, .input-message {
+    display: block;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+    margin: 20px;
+    background-color: black;
+    border:white solid 3px;
+    color: white;
+    font-family: "Nunito";
+    box-shadow: 3px 3px 10px rgb(57,255, 20);
+}
+.input-submit {
+    display: block;
+    margin-inline: auto;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: "Nunito";
+    background-color: black;
+    border: white solid 2px;
+    color: rgb(57,255, 20);
+    box-shadow: 2px 2px 5px rgb(57,255, 20);
+}
+.input-submit:hover {
+    box-shadow: 2.5px 2.5px 8px rgb(57,255, 20);
+    background-color: white;
+    color: black;
+}
+::placeholder {
+  color: white;
+  opacity: .5;
+
+  font-family: "Nunito";
+}
+.form-div {
+    max-width: fit-content;
+    margin-inline: auto;
+}
+  
+
+
+
+
+
