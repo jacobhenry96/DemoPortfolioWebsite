@@ -1,3 +1,6 @@
+* {
+    z-index: 1;
+}
 #particles-js {
     width: 99%;
     height: 100vh;
@@ -9,9 +12,9 @@
 }
 
 .body {
-    background-color: black;
+    background-color: transparent;
 }
-.name {
+#name {
     font-size: 100px;
     display: block;
     text-align: center;
@@ -20,27 +23,21 @@
     z-index: 1;
     color: white;
     text-shadow: 2px 4px 10px rgb(57,255, 20);
-    font-family: "Archivo Black", sans-serif;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end)
+    font-family: 'Archivo Black', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0em;
+    /* animation: 
+      typing 3.5s steps(40, end)  */
 }
 
 
-    /* The typing effect */
-@keyframes typing {
+/* @keyframes typing {
     from { width: 0 }
     to { width: 100% }
-}
-  
-  /* The typewriter cursor effect
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  } */
+} */
+
 
 
 .navi {
@@ -48,17 +45,21 @@
     width: 260px;
     height: 50px;
     font-weight: bold;
+    font-size: 20px;
     background-color:  black;
     border: white solid 5px;
     color: rgb(57,255, 20);   /* #7ac2b2  */
     border-radius: 10px;
     z-index: 1;
     box-shadow: 2px 2px 10px rgb(57,255, 20);
-    font-family: "Nunito", sans-serif;
+    font-family: "VT323", sans-serif;
 }
 
 .navi:hover {
     filter: brightness(120%);
+    box-shadow: 3px 3px 10px rgb(57,255, 20);
+    background-color: white;
+    color: black;
 }
 
 .links {
@@ -77,10 +78,20 @@ a {
     z-index: 1;
 }
 .car-images {
-    width: 374px;
-    height: 287px;
-    margin: 20px;
+    width: 600px;
     display: inline-flex;
+    z-index: 0;
+    transition: .5s ease;
+    flex: 1;
+}
+.car-images:hover {
+    width: 620px;
+}
+#imageDiv1 {
+    width: 374px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
     z-index: 1;
 }
 .profile-picture {
@@ -102,10 +113,10 @@ a {
     justify-content: center;
     font-size: 50px;
     color: white;
-    font-family: "Nunito", sans-serif;
+    font-family: "VT323", sans-serif;
     text-shadow: 3px 4px 10px rgb(57,255, 20);
-
 }
+
 .about-text-1 {
     display: inline-block;
     margin-right: 80px;
@@ -118,7 +129,7 @@ a {
 .skills {
     display: flex;
     justify-content: center;
-    font-family: "Nunito";
+    font-family: "VT323";
 }
 .skills-box {
     border: solid 8px white;
@@ -130,12 +141,12 @@ a {
     margin: 15px;
     border-radius: 10px;
     z-index: 1;
-    box-shadow: 2px 4px 10px white;
+    box-shadow: 2px 4px 10px rgb(57,255, 20);
 }
 .skills-box:hover {
     border: solid 8px white;
-    box-shadow: 3px 5px 10px white;
-    box-shadow: rg;
+    box-shadow: 3px 5px 10px rgb(57,255, 20);
+    filter: brightness(110%);
 }
 .skills-image {
     margin-top: 25px;
@@ -146,31 +157,34 @@ a {
     font-size: 20px;
     color: rgb(57,255, 20)
 }
-
-
+#desc1, #desc3 {
+    display: inline-block;
+    vertical-align: center;
+    padding-top: 17%;
+}
+#desc2 {
+    display: inline-block;
+    vertical-align: center;
+    padding-top: 12%;
+}
+#desc4 {
+    display: inline-block;
+    vertical-align: center;
+    padding-top: 10%;
+}
 .portfolio {
     display: inline-flex;
     height: 750px;
     width: 100%;
     z-index: 1;
+    justify-content: center;
+    text-align: center;
 }
-
-.portfolio:after{
- content: "";
- display: table;
- clear: both;
-}
-
 .column{
-    float: left;
+    justify-content: center;
     width: 50%;
 }
 
-body {
-    background-color: black;
-
-    
-  }
 .about-links {
     display: flex;
     justify-content: center;
@@ -193,7 +207,15 @@ body {
     border-radius: 4px;
     box-shadow: 3px 3px 10px rgb(57,255, 20);
     color: rgb(57,255, 20);
-    font-family: "Pixelify Sans";
+    font-family: "VT323";
+    font-size: 15px;
+}
+.chatbot-text {
+    font-family: "VT323";
+    color: white;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .chatbot-submit {
     margin: 25px;
@@ -210,22 +232,40 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    font-family: "Nunito";
+    font-family: "VT323";
 }
 .chatbot-submit:hover {
     box-shadow: 2px 4px 10px rgb(57,255, 20);
 }
+.chatbot-border {
+    border: 3px white solid;
+    box-shadow: 2px 2px 10px rgb(57,255, 20);
+    border-radius: 10px;
+    width: 700px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    margin-top: 40px;
+} 
 .input-name, .input-email, .input-message {
     display: block;
     align-items: center;
-    width: 300px;
-    height: 30px;
-    margin: 20px;
+    width: 500px;
+    height: 50px;
+    margin: 30px;
     background-color: black;
     border:white solid 3px;
     color: white;
-    font-family: "Nunito";
+    font-family: "VT323";
     box-shadow: 3px 3px 10px rgb(57,255, 20);
+    font-size: 25px;
+}
+.chatbot-input {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .input-submit {
     display: block;
@@ -233,7 +273,7 @@ body {
     width: 150px;
     height: 35px;
     border-radius: 10px;
-    font-family: "Nunito";
+    font-family: "VT323";
     background-color: black;
     border: white solid 2px;
     color: rgb(57,255, 20);
@@ -244,19 +284,70 @@ body {
     background-color: white;
     color: black;
 }
+.submit-button {
+    background-color: black;
+    box-shadow: 2px 2px 5px rgb(57,255, 20);
+    color: white;
+    font-family: "VT323";
+    width: 100px;
+    height: 35px;
+    border: white solid 2px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+    margin-inline: auto;
+    margin-bottom: -10px;
+}
+.submit-button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px 5px rgb(57,255, 20);
+}
 ::placeholder {
   color: white;
   opacity: .5;
-
-  font-family: "Nunito";
+  font-family: "VT323";
 }
 .form-div {
+    display: inline-block;
+    max-width: fit-content;
+    background-color: black;
+    padding: 10px;
+    border: 5px solid white;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+html {
+    background: black;
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+.nyan-cat {
+    margin-bottom: 80px;
+    width: 300px;
+    padding-right: 50px;
+}
+.contact-info {
     max-width: fit-content;
     margin-inline: auto;
 }
-  
-
-
-
+.party {
+    position: fixed;
+    right: 0;
+    bottom: 0; 
+}
 
 

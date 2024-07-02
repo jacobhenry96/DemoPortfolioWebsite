@@ -5,53 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
     <title>Document</title>
+    <script defer src="portfolio.js"></script>
+    <script defer src="background.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <canvas class="Matrix" id="Matrix"></canvas>
     <div class="about-links">
-        <a href="home.html"><button  class="navi">HOME</button></a>
-        <a href="about.html"><button class="navi">ABOUT</button></a>
-        <a href="contact.html"><button class="navi">CONTACT</button></a>
+      <a href="index.html"><button class="navi">HOME </button></a>
+      <a href="about.html"><button  class="navi">ABOUT</button></a>
+      <a href="portfolio.html"><button class="navi">PORTFOLIO</button></a>
+      <a href="contact.html"><button  class="navi">CONTACT</button></a>
     </div>
     <h2 class="title" id="skills">Skills</h2>
     <div class="skills">
         <br>
-        <div class="skills-box">
-          <img class="skills-image" src="images/Python-logo-notext.svg.png" alt="">
-          <p class="skills-text">Python</p>
+        <div id="skill1" class="skills-box">
+          <img id="skill-image1" class="skills-image" src="images/Python-logo-notext.svg.png" alt="">
+          <p id="skill-text1" class="skills-text">Python</p>
+          <p id="desc1">I am a self taught python developer. I have had experience in machine learning, using APIs, and scripting.</p>
         </div>
-        <div class="skills-box">
-          <img class="skills-image" src="images\Unofficial_JavaScript_logo_2.svg.png" alt="">
-          <p class="skills-text">Javascript</p>
+        <div id="skill2" class="skills-box">
+          <img id="skill-image2" class="skills-image" src="images\Unofficial_JavaScript_logo_2.svg.png" alt="">
+          <p id="skill-text2" class="skills-text">Javascript</p>
+          <p id="desc2">Through the Catapult Intership I was able to gain JavaScript skills. I have made several apps including a Website for Change and others.</p>
         </div>
-        <div class="skills-box">
-            <img class="skills-image" src="images/HTML5_logo_and_wordmark.svg.png" alt="">
-            <p class="skills-text">HTML</p>
+        <div id="skill3" class="skills-box">
+            <img id="skill-image3" class="skills-image" src="images/HTML5_logo_and_wordmark.svg.png" alt="">
+            <p id="skill-text3" class="skills-text">HTML</p>
+            <p id="desc3">I was able to learn the basics of HTML so I could structure webpages and better use Python to practice developing backends.</p>
         </div>
-        <div class="skills-box">
-            <img class="skills-image" src="images/CSS3_logo_and_wordmark.svg" alt="">
-            <p class="skills-text">CSS</p>
-        </div>  
-    </div>  
+        <div id="skill4" class="skills-box">
+            <img id="skill-image4" class="skills-image" src="images/CSS3_logo_and_wordmark.svg" alt="">
+            <p id="skill-text4" class="skills-text">CSS</p>
+            <p id="desc4">Through online tutorials I was able to get down the basics of CSS before entering Catapult. Although Catapult has really helped hone my skills to make me better.</p>
+        </div>
+    </div>
 
     <h2 class="title "id="portfolio">Portfolio</h2>
     <div class="portfolio">
       <div class="column">
-            <img class="car-images" src="images/sports-car-driving-asphalt-road-night-generative-ai.jpg" alt="">
-            <img class="car-images" src="images/luxurious-car-parked-highway-with-illuminated-headlight-sunset.jpg" alt="">
+              <img class="car-images" id="car-image1" src="images/1.png" alt="">
+              <img class="car-images" id="car-image2" src="images/2.png" alt="">
       </div>
       <div class="column">
-            <img class="car-images" src="images/lamborghini-closeup.jpg" alt="">
-            <img class="car-images" src="images/sports-car-driving-asphalt-road-night-generative-ai.jpg" alt="">  
-      </div>
-      <div class="column">
-            <img class="car-images" src="images/luxurious-car-parked-highway-with-illuminated-headlight-sunset.jpg" alt="">
-            <img class="car-images" src="images/lamborghini-closeup.jpg" alt="">
-      </div>
-            
-            
+            <img class="car-images" id="car-image3" src="images/3.png" alt="">
+            <img class="car-images" id="car-image4" src="images\3D Torus Knot.png" alt="">  
+      </div>     
     </div>
 </body>
 </html>

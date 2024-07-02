@@ -1,10 +1,10 @@
 {
     "particles": {
       "number": {
-        "value": 150
+        "value": 200
       },
       "color": {
-        "value": "#FFF"
+        "value": "#39FF14"
       }, 
       "shape": {
         "type": "circle"
@@ -37,16 +37,16 @@
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "bubble"
+                "mode": "repulse"
             },
             "onclick": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "bubble"
             }
         },
         "modes": {
             "repulse": {
-                "distance": 250
+                "distance": 100
             },
             "bubble": {
                 "size": 30,

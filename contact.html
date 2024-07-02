@@ -7,22 +7,33 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="contact.js"></script>
+    <script defer src="background.js"></script>
 </head>
 <body>
+    <canvas id="Matrix" style="width: 100%; height: 100%;"></canvas>
     <div class="about-links">
-        <a href="home.html"><button class="navi">HOME </button></a>
+        <a href="index.html"><button class="navi">HOME </button></a>
         <a href="about.html"><button  class="navi">ABOUT</button></a>
         <a href="portfolio.html"><button class="navi">PORTFOLIO</button></a>
+        <a href="contact.html"><button  class="navi">CONTACT</button></a>
 
     </div>
-    <div class="form-div">
-        <form action="">
-            <input class="input-name" placeholder="Name" type="text">
-            <input class="input-email" placeholder="Email" type="text">
-            <input class="input-message" placeholder="Message" type="text">
-            <input class="input-submit" type="submit">
-        </form>
+    <div class='contact-info'>
+        <img class='nyan-cat' src="images\17xo.gif" alt="">
+        <div class="form-div">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="21272443-b7ba-4792-89a4-d12754adf2d2">
+                <input class="input-name" type="text" name="name" placeholder="Name" required>
+                <input class="input-email" type="email" name="email" placeholder="Email" required>
+                <textarea class="input-message" name="message" placeholder="Enter Message" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button class="input-submit" type="submit">Submit Form</button>
+            </form>
+        </div>
     </div>
+    <button class="party">🎉</button>
 </body>
 </html>
