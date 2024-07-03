@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
     <script defer src="https://smtpjs.com/v3/smtp.js"></script>
-    <script defer src="contact.js"></script>
+    <script defer type="module" src="contact.js"></script>
     <script defer src="background.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
     <canvas id="Matrix" style="width: 100%; height: 100%;"></canvas>
@@ -22,7 +23,7 @@
 
     </div>
     <div class='contact-info'>
-        <img class='nyan-cat' src="images\17xo.gif" alt="">
+        <canvas id="bg"></canvas>
         <div class="form-div">
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="21272443-b7ba-4792-89a4-d12754adf2d2">
@@ -35,5 +36,8 @@
         </div>
     </div>
     <button class="party">🎉</button>
+    <div class='scrolling-text'>
+        <p class="partyText">ThreeJs for 3D Anmiations<br>Kirilv for Confetti Effect<br>Particles.js for Particle Effect Animation<br>Google Fonts for pixel font style<br>sumitKcs for Matrix Background Animation</p>
+    </div>
 </body>
 </html>

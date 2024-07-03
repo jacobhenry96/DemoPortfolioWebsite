@@ -317,6 +317,7 @@ a {
     border: 5px solid white;
     margin-top: 50px;
     border-radius: 10px;
+    margin-left: 500px;
 }
 html {
     background: black;
@@ -346,8 +347,13 @@ canvas {
 }
 .party {
     position: fixed;
-    right: 0;
-    bottom: 0; 
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+}
+.partyText{
+    text-align: center;
+    z-index: 1;
 }
 
 
